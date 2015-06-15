@@ -24,5 +24,15 @@
 th {
   width: 50%;
   text-align: left;
+  padding-bottom: 20px;
 }
+
+td {
+  padding-bottom: 20px;
+}
+
+p, th, td {
+  font-size: 20px
+}
+
 
