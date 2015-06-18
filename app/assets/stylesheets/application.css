@@ -32,7 +32,7 @@ th{
 }
 
 th.th-name {
-  width: 70%;
+  width: 80%;
 }
 
 td {
@@ -40,7 +40,7 @@ td {
 }
 
 p, th, td {
-  font-size: 50px;
+  font-size: 45px;
 }
 
 
