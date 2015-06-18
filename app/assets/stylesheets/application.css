@@ -22,10 +22,17 @@
   font-size: 60px;
 }
 
-th {
-  width: 50%;
+table {
+  width: 100%;
+}
+
+th{
   text-align: left;
   padding-bottom: 40px;
+}
+
+th.th-name {
+  width: 70%;
 }
 
 td {
