@@ -4,7 +4,11 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    @items = Item.all
+    if params[:search]
+      @items = Item.search(params[:search]).order('name ASC')
+    else
+      @items = Item.all.order('name ASC')
+    end
   end
 
   # GET /items/1
