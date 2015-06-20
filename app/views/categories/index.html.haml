@@ -1,0 +1,4 @@
+%table
+  %tbody
+    - @categories.each do |category|
+      %td.grid= link_to category.name, category, class: "category-text"
