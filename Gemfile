@@ -46,6 +46,7 @@ end
 
 gem 'html2haml'
 gem 'haml-rails'
+gem 'rails_admin', '~> 0.6.8'
 
 group :production do
   gem 'rails_12factor'

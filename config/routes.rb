@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
+  get 'categories/index'
+
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :items
+  resources :categories, only: [:index, :show]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'items#index'
+   root 'categories#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

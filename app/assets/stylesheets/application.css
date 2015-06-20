@@ -14,17 +14,31 @@
  *= require_self
  */
 
+.header {
+  /*padding: 10px;*/
+  color: #3b4c53;
+}
 .header h1{
-  background-color: black;
-  color: white;
-  margin: 0;
-  padding: 40px 10px;
   font-size: 60px;
 }
 
-.search {
-  margin: 20px 10px;
+.header a, .header a:visited, .header a:hover {
+  text-decoration: none;
+  color: #3b4c53;
+  background-color: white;
+}
+
+.search-panel {
   line-height: 100px;
+  background-color: #cdcdcd;
+  padding: 10px;
+  height: 80px;
+}
+
+.search {
+  background-color: white;
+  padding: 5px;
+  height: 65px;
 }
 
 .search-form {
@@ -37,21 +51,28 @@
   float: left;
   font-size: 30px;
   margin-right: 10px;
-  border: 2px solid black;
-  padding: 33px 10px;
+  /*border: 2px solid black;*/
+  border: none;
+  padding: 15px 10px;
 }
 
 input[type="submit"] {
-  padding: 33px 0px;
-  background-color: black;
+  padding: 15px 0px;
+  background-color: #3b4c53;
   color: white;
   font-size: 30px;
   width: 15%;
+  border: none;
+  float: right;
 }
 
 table {
   width: 100%;
   padding-top: 30px;
+}
+
+td {
+  line-height: 90px;
 }
 
 th{
@@ -63,12 +84,27 @@ th.th-name {
   width: 80%;
 }
 
-td {
-  padding: 40px 0;
-}
 
 p, th, td {
   font-size: 45px;
 }
 
+td.grid:hover, td.grid:active {
+  background-color: #000;
+}
 
+.category-text{
+  color: #fff;
+  text-decoration: none;
+}
+
+td.grid {
+  padding: 0px 20px;
+  float: left;
+  background-color: #3ecdfc;
+  margin: 10px;
+}
+
+.grid a:visited {
+  color: white;
+}
