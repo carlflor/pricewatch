@@ -14,25 +14,50 @@
  *= require_self
  */
 
-.header {
-  /*padding: 10px;*/
-  color: #3b4c53;
+body, td {
+  font-family: 'Helvetica', 'Arial', sans-serif !important;
 }
+
+.header-logo, .header-text {
+  float: left;
+}
+
+.header {
+  line-height: normal;
+  margin: 10px;
+  height: 116px;
+}
+
+
 .header h1{
   font-size: 60px;
+}
+
+.header h2 {
+  font-size: 30px;
+}
+
+h1, h2, h3{
+  margin: 0;
+}
+
+.categories {
+  margin-left: 10px;
+  padding-top: 30px;
 }
 
 .header a, .header a:visited, .header a:hover {
   text-decoration: none;
   color: #3b4c53;
-  background-color: white;
+  background-color: #fff;
 }
 
 .search-panel {
   line-height: 100px;
   background-color: #cdcdcd;
   padding: 10px;
-  height: 80px;
+  height: 75px;
+  margin: 10px;
 }
 
 .search {
@@ -68,7 +93,7 @@ input[type="submit"] {
 
 table {
   width: 100%;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
 }
 
 td {

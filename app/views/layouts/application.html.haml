@@ -8,8 +8,11 @@
     = csrf_meta_tags
   %body
     .header
-      %h1= link_to "PRICE WATCH", root_path
-      %h2 Department of Trade & Industry
+      .header-logo
+        = link_to image_tag( 'logo.png'), root_path
+      .header-text
+        %h1= link_to "BANTAY PRESYO", root_path
+        %h2 Department of Trade & Industry
     .search-panel
       .search
         = form_tag(items_path, method: 'get', id: "search-form") do
