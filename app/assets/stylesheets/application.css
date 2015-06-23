@@ -133,3 +133,14 @@ td.grid {
 .grid a:visited {
   color: white;
 }
+
+.category {
+  margin: 10px;
+  margin-top: 30px;
+}
+
+.category h1 {
+  font-size: 40px;
+  margin-botom: 30px;
+  line-height: normal;
+}
