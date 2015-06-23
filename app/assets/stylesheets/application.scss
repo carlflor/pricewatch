@@ -1,3 +1,4 @@
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -25,32 +26,34 @@ body, td {
 .header {
   line-height: normal;
   margin: 10px;
-  height: 116px;
+  height: 139px;
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  a, a:visited, a:hover {
+    text-decoration: none;
+    color: #3b4c53;
+    background-color: #fff;
+  }
 }
 
-
-.header h1{
-  font-size: 60px;
-}
-
-.header h2 {
-  font-size: 30px;
-}
-
-h1, h2, h3{
+h1, h2, h3, p{
   margin: 0;
+  line-height: normal;
 }
 
 .categories {
   margin-left: 10px;
-  padding-top: 30px;
+  padding: 30px 0;
+  font-size: 30px;
 }
 
-.header a, .header a:visited, .header a:hover {
-  text-decoration: none;
-  color: #3b4c53;
-  background-color: #fff;
-}
 
 .search-panel {
   line-height: 100px;
@@ -106,12 +109,13 @@ th{
 }
 
 th.th-name {
-  width: 80%;
+  width: 70%;
 }
 
 
 p, th, td {
   font-size: 45px;
+  /*line-height: normal;*/
 }
 
 td.grid:hover, td.grid:active {
@@ -134,13 +138,31 @@ td.grid {
   color: white;
 }
 
-.category {
-  margin: 10px;
-  margin-top: 30px;
+.table-body {
+  margin-left: 10px;
 }
 
-.category h1 {
-  font-size: 40px;
-  margin-botom: 30px;
-  line-height: normal;
+.breadcrumb {
+  ul {
+    padding-left: 0;
+    margin: 0;
+    padding: 30px 0;
+    height: 36px;
+  }
+
+  ul li {
+    display: inline;
+    padding: 0;
+    font-size: 30px;
+    color: #3b4c53;
+  }
+
+  a, a:visited, a:hover {
+    text-decoration: none;
+    color: #cdcdcd;
+    background-color: #fff;
+  }
 }
+
+
+

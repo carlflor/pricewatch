@@ -1,13 +1,21 @@
-%p#notice= notice
-%p
-  %strong Name:
-  = @item.name
-%p
-  %strong Price:
-  = @item.price
-%p
-  %strong Description:
-  = @item.description
--#= link_to 'Edit', edit_item_path(@item)
--#|
-%p= link_to 'Back', items_path
+.table-body
+  .breadcrumb
+    %ul
+      %li= link_to "Product Categories | ", root_path
+      %li= link_to "#{@item.category.name} | ", category_path(@item.category), method: :get
+      %li= @item.name
+  %p
+    %strong Name:
+    = @item.name
+  %p
+    %strong SRP:
+    = @item.srp
+  %p
+    %strong Price:
+    = @item.price
+  %p
+    %strong Description:
+    = @item.description
+  -#= link_to 'Edit', edit_item_path(@item)
+  -#|
+  -#%p= link_to 'Back', items_path
